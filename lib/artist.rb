@@ -19,7 +19,7 @@ class Artist
     #get all exiting song instances from song
     #select only the ones associated with artist instances
     Song.all.select do |song|
-      Artist.all == self
+      song.artist == self
     end
   end
   
