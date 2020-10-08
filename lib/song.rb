@@ -2,17 +2,17 @@
 # relies on the Artist instances to build associations.
 
 class Song
-  attr_accessor :name
+  # attr_accessor :name
   
-  @@all = []
+  # @@all = []
   
-  def initialized 
-    @name = name
-    @@all << self
-  end
+  # def initialized 
+  #   @name = name
+  #   @@all << self
+  # end
 
-  def self.all
-    @@all
-  end
+  # def self.all
+  #   @@all
+  # end
   
 end
