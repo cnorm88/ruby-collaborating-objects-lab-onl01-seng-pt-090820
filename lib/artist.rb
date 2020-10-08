@@ -15,6 +15,7 @@ class Artist
     @@all
   end
   
+ 
   def songs
     #return array of all songs that belong to self
     #get all existing song instances from song
@@ -37,6 +38,10 @@ class Artist
     self.all.find do |artist|
       artist.name == name
     end
+  end
+  
+  def self.all_artists
+    self.all.map {|artist| artist.name|
   end
   
   def print_songs
