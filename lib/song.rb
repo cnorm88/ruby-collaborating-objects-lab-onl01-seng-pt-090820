@@ -20,6 +20,8 @@ class Song
     names = filename.split(" - ")
     artist = name_bits[0]
     name = names[1]
+    song = Song.new(name)
+    artist = Artist.find_or
   end  
   
 end
