@@ -18,7 +18,9 @@ class Artist
     #return array of all songs that belong to self
     #get all exiting song instances from song
     #select only the ones associated with artist instances
-    Artist.all
+    Artist.all.select do |song|
+      Artist.all == song
+    end
   end
   
   def add_song
