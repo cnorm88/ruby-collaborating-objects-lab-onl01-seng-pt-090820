@@ -33,7 +33,8 @@ class Artist
   end
   
   def self.find(name)
-    self.find do ||
+    self.find do |artist|
+      artist.name == 
   end
   
 end
