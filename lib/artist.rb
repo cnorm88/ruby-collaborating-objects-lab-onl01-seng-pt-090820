@@ -40,5 +40,8 @@ class Artist
   end
   
   def print_songs
+    #instance methods outputs the names of all songs associated with this Artist instance
+    self.all
+  end
   
 end
