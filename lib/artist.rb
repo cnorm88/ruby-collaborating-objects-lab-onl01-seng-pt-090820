@@ -14,6 +14,13 @@ class Artist
     @@all
   end
   
+  def songs
+    #return array of all songs that belong to self
+    #get all exiting song instances from song
+    #select only the ones associated with artist instances
+    
+  end
+  
   def add_song
     
   end
