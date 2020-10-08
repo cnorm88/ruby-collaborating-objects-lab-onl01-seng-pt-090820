@@ -20,7 +20,7 @@ class MP3Importer
       artist_name = filename.split(' - ')[0]
       artist = Artist.find_or_create_by_name(artist_name)
       song = Song.new_by_filename(filename)
-      if Artist.all_artist.include?(artist_name) == false
+      if Artist.all_artists.include?(artist_name) == false
           artist.add_song(song)
           artist.save
       end
