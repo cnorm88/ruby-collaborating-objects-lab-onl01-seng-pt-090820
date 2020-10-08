@@ -21,7 +21,9 @@ class Song
     artist = name_bits[0]
     name = names[1]
     song = Song.new(name)
-    artist = Artist.find_or
+    artist = Artist.find_or_create_by_name(artist)
+    song.artist = artist
+    song
   end  
   
 end
