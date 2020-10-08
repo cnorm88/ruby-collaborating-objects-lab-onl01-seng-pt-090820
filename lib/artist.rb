@@ -5,7 +5,7 @@ class Artist
   
   @@all = []
   
-  def initialized 
+  def initialize 
     @name = name
     @@all << self
   end
