@@ -7,7 +7,7 @@ class Artist
   
   def initialized 
     @name = name
-    save
+    @@all << self
   end
 
   def self.all
