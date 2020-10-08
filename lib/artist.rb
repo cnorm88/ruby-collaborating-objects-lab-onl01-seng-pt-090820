@@ -34,7 +34,8 @@ class Artist
   
   def self.find(name)
     self.find do |artist|
-      artist.name == 
+      artist.name == name
+    end
   end
   
 end
