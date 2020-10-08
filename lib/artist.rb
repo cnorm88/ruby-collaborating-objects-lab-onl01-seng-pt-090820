@@ -33,7 +33,7 @@ class Artist
   end
   
   def self.find(name)
-    binding.pry
+binding.pry
   end
   
 end
