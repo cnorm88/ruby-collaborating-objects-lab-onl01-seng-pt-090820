@@ -41,7 +41,7 @@ class Artist
   end
   
   def self.all_artists
-    self.all.map {|artist| artist.name|}
+    self.all.map {|artist| artist.name}
   end
   
   def print_songs
