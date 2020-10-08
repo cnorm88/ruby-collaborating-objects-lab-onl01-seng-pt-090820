@@ -16,19 +16,16 @@ class MP3Importer
   end
   
   def import
-    # library = files.each do |filename|
-    #   artist_name = filename.split(' - ')[0]
-    #   artist = Artist.find_or_create_by_name(artist_name)
-    #   song = Song.new_by_filename(filename)
-    #   if Artist.all_artists.include?(artist_name) == false
-    #       artist.add_song(song)
-    #       artist.save
-    #   end
-    # end
-    self.files.each do |file|
+    library = files.each do |filename|
+      artist_name = filename.split(' - ')[0]
+      artist = Artist.find_or_create_by_name(artist_name)
       song = Song.new_by_filename(filename)
-      Artist.all << song.artist unless Artist.all.include?(song.artist)
+      if Artist.all_artists.include?(artist_name) == false
+          artist.add_song(song)
+          artist.save
+      end
     end
+  end
   end
   
 end
