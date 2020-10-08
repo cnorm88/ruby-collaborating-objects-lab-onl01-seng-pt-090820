@@ -26,8 +26,8 @@ class Song
     song
   end  
   
-  def artist_name(name)
-    Artist.find(name) ? Artist.find(name) : self.new(name)
-  end 
+  # def artist_name(name)
+  #   Artist.find(name) ? Artist.find(name) : self.new(name)
+  # end 
   
 end
