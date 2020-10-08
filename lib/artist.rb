@@ -27,7 +27,7 @@ class Artist
   def add_song(song)
     song.artist = self
   end
-  
+  binding.pry
   def self.find_or_create_by_name()
     # Find the artist instance that has that name or create one if it doesn't exist. Either way, the return value of the method will be an instance of an artist with the name attribute filled out
   end
