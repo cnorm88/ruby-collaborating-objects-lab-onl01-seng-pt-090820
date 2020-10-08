@@ -1,4 +1,5 @@
 # responsible for either creating the artist (if the artist doesn't exist in our program yet) or finding the instance of that artist (if the artist does exist).
+require 'pry'
 
 class Artist
   attr_accessor :name
@@ -24,7 +25,7 @@ class Artist
   end
   
   def add_song(song)
-    
+    binding.pry
   end
   
 end
